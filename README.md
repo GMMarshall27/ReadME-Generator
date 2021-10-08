@@ -1,10 +1,10 @@
-# test
+# ReadME Generator
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
 
-  test
+  A node.js application that allows for a user to answer questions that are prompted by inquirer to generate a README.md file once completed. 
 
   ## Table of Contents
 
@@ -17,27 +17,27 @@
 
   ## Installation
 
-  test
+  To install must run npm i inquirer and npm i. 
 
 
   ## Usage
 
-  test
+  In order to run this application user must type "node index.js" in the termianl and answer the questions that are prompted. 
 
 
   ## Contributing
 
-  test
+  Garrett Marshall
 
 
   ## License
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  Application is covered by [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
   ## Tests
 
-  test
+  To run test user must input npm test.
 
 
   ## Questions
@@ -45,6 +45,6 @@
 
   For any questions, please reach out to me at:
 
-  GitHub: [test](https://github.com/test)
+  GitHub: [gmmarshall27](https://github.com/gmmarshall27)
 
-  Email: test
+  Email: gmmarshall27@gmail.com
