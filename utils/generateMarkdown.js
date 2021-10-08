@@ -68,7 +68,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(answers) {
   return `# ${answers.title}
 
-  ${renderLicenseBadge(answers.license)}
+  ${renderLicenseBadge(answers.license)}${renderLicenseLink(answers.license)}
 
   ##Description
 
@@ -83,7 +83,37 @@ function generateMarkdown(answers) {
   -[Tests](#tests)
   -[Questions](#questions)
 
+  ##Installation
 
+  ${answers.installation}
+
+  <a href="#installation></a>
+
+  ##Usage
+
+  ${answers.usage}
+
+  <a href="#usage" ></a>
+
+  ## Contributing
+
+  ${answers.contributing}
+
+  <a href="#contributing></a>
+
+  ##License
+
+  ${renderLicenseSection(answers.license)}
+
+  <a href="#license"></a>
+
+  ##Tests
+
+  ${answers.tests}
+
+  <a href="#tests"></a>
+
+  ##Questions
 
 `;
 }
