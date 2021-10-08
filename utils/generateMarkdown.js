@@ -100,8 +100,9 @@ function generateMarkdown(answers) {
 
   ## License
 
-  ${renderLicenseSection(answers.license)}
+ Application is covered by ${renderLicenseSection(answers.license)}
 
+  
 
   ## Tests
 
