@@ -3,16 +3,16 @@
 function renderLicenseBadge(license) {
   switch (license){
     case 'MIT':
-      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
       break;
     case 'APACHE 2.0':
-      return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+      return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
       break;
     case 'GPL 3.0':
-      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
       break;
     case 'BSD 3':
-      return "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
+      return "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)]";
       break;
       case 'None':
         return "";
@@ -22,7 +22,25 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  switch (license){
+    case 'MIT':
+      return "(https://opensource.org/licenses/MIT)";
+      break;
+    case 'APACHE 2.0':
+      return "(https://opensource.org/licenses/Apache-2.0)";
+      break;
+    case 'GPL 3.0':
+      return "(https://www.gnu.org/licenses/gpl-3.0)";
+      break;
+    case 'BSD 3':
+      return "(https://opensource.org/licenses/BSD-3-Clause)";
+      break;
+      case 'None':
+        return "";
+        break;
+}
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
