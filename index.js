@@ -2,11 +2,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
+const markDown = require('./utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 
 
-const promptUser = () => {
-  return inquirer.prompt([
+const questions = [
     {
       type: 'input',
       name: 'username',
@@ -53,8 +53,8 @@ const promptUser = () => {
         name: 'contributing',
         message: 'What does the user need to know about contributing to the repo?',
       },
-  ]);
-};
+  ];
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -68,8 +68,13 @@ function writeToFile(fileName, data) {
 const writeFileAsync = util.promisify(writeToFile);
 // TODO: Create a function to initialize app
 function init() {
-    
+    try{
+       const answers =  await inquirer.prompt(questions);
+       const  readMe = markDown(answers);
+       await writeFileAsync('README.md', markDown);
+    } catch (error){
+        console.log(error);
 }
-
+};
 // Function call to initialize app
 init();
