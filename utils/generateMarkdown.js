@@ -70,11 +70,11 @@ function generateMarkdown(answers) {
 
   ${renderLicenseBadge(answers.license)}${renderLicenseLink(answers.license)}
 
-  ##Description
+  ## Description
 
   ${answers.description}
 
-  ##Table of Contents
+  ## Table of Contents
 
   -[Installation](#installation)
   -[Usage](#usage)
@@ -83,38 +83,33 @@ function generateMarkdown(answers) {
   -[Tests](#tests)
   -[Questions](#questions)
 
-  ##Installation
+  ## Installation
 
   ${answers.installation}
 
-  <a href="#installation></a>
 
-  ##Usage
+  ## Usage
 
   ${answers.usage}
 
-  <a href="#usage" ></a>
 
   ## Contributing
 
   ${answers.contributing}
 
-  <a href="#contributing></a>
 
-  ##License
+  ## License
 
   ${renderLicenseSection(answers.license)}
 
-  <a href="#license"></a>
 
-  ##Tests
+  ## Tests
 
   ${answers.tests}
 
-  <a href="#tests"></a>
 
-  ##Questions
-<a href="#questions"></a>
+  ## Questions
+
 
   For any questions, please reach out to me at:
 
