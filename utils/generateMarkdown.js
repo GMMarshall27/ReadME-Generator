@@ -114,7 +114,13 @@ function generateMarkdown(answers) {
   <a href="#tests"></a>
 
   ##Questions
+<a href="#questions"></a>
 
+  For any questions, please reach out to me at:
+
+  GitHub: [${answers.username}](https://github.com/${answers.username})
+
+  Email: ${answers.email}
 `;
 }
 
